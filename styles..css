@@ -88,6 +88,11 @@ main {
 ::-webkit-scrollbar {
   background: #eee;
   height: 0.6rem;
+  width: 0.7rem;
+}
+
+html::-webkit-scrollbar {
+  border-radius: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -101,10 +106,14 @@ main {
   text-align: center;
   font-size: 3rem;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
-.container > h2 {
+.container .category {
+  padding-bottom: 4rem;
+}
+
+.container .category > h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
 }
@@ -119,6 +128,7 @@ main {
   min-width: 260px;
   padding: 1rem;
   background-color: #fff;
+  margin-bottom: 0.5rem;
 }
 
 .podcard img {
