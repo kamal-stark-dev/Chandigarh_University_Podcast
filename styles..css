@@ -108,3 +108,13 @@ main {
 .podcard img {
   width: 100%;
 }
+
+.podcard .meta-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.podcard .meta-info span {
+  font-size: 1rem;
+}
