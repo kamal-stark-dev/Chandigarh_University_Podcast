@@ -56,7 +56,7 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  height: 4rem;
+  height: 4.5rem;
   padding: 0 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -128,7 +128,7 @@ html::-webkit-scrollbar {
   min-width: 260px;
   padding: 1rem;
   background-color: #fff;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .podcard img {
