@@ -9,6 +9,46 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <style>
+      main {
+        padding: 0;
+      }
+      main .container {
+        padding: 5rem 2rem 5rem;
+      }
+      .player {
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1.2rem 2rem 0.6rem 2rem;
+        gap: 0.8rem;
+        position: fixed;
+        border-top: 2px solid #ccc;
+        bottom: 0;
+      }
+      .progress {
+        display: flex;
+        width: 100%;
+        align-items: center;
+      }
+      #progress {
+        flex: 1;
+        margin-right: 1rem;
+      }
+      .player i {
+        font-size: 1.8rem;
+      }
+      .player .control-btn:nth-child(3) i {
+        font-size: 3rem;
+      }
+      .player .controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -203,6 +243,37 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="player">
+        <audio
+          src="./assets/podcasts/Podcast - Federated Learning.m4a"
+          id="podcast"
+        ></audio>
+        <div class="progress">
+          <input type="range" value="0" id="progress" />
+          <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+        </div>
+        <div class="controls">
+          <div class="control-btn">
+            <i class="ri-skip-left-fill" title="Previous Podcast"></i>
+          </div>
+          <div class="control-btn">
+            <i class="ri-replay-10-line" title="Replay 10s" id="rewind"></i>
+          </div>
+          <div class="control-btn" onclick="play_n_pause()">
+            <i class="ri-play-fill" title="Play/Pause" id="playPause"></i>
+          </div>
+          <div class="control-btn">
+            <i class="ri-forward-10-line" title="Skip  10s" id="skip"></i>
+          </div>
+          <div class="control-btn">
+            <i class="ri-skip-right-fill" title="Next Podcast"></i>
+          </div>
+          <!-- <div class="control-btn">
+            <i class="ri-heart-line" title="Like"></i>
+          </div> -->
         </div>
       </div>
     </main>

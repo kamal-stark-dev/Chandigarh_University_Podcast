@@ -12,7 +12,6 @@
 /* Pale Blue */
 /* Dark Gray */
 body {
-  padding: 0 2rem;
   background-color: #effafd;
   color: #333333;
 }
@@ -90,6 +89,7 @@ nav ul li a.active {
 }
 
 main {
+  padding: 0 2rem;
   padding-top: 5rem;
 }
 
@@ -137,4 +137,4 @@ main {
 }
 .pod-container .podcard:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, #4a8bdf 0px 0px 0px 2px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */

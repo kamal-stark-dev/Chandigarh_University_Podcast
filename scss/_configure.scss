@@ -15,9 +15,13 @@ $background-color: #effafd; /* Pale Blue */
 $text-color: #333333; /* Dark Gray */
 
 body {
-  padding: 0 2rem;
   background-color: $background-color;
   color: $text-color;
+}
+
+main {
+  padding-top: 5rem;
+  padding: 0 2rem;
 }
 
 a {
