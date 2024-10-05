@@ -21,11 +21,15 @@
   display: flex;
   gap: 1rem;
   overflow-x: scroll;
+
   .podcard {
-    min-width: 260px;
+    min-width: 340px;
     padding: 1rem;
     background-color: #fff;
     margin-bottom: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     img {
       width: 100%;

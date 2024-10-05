@@ -114,10 +114,13 @@ main {
   overflow-x: scroll;
 }
 .pod-container .podcard {
-  min-width: 260px;
+  min-width: 340px;
   padding: 1rem;
   background-color: #fff;
   margin-bottom: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .pod-container .podcard img {
   width: 100%;
