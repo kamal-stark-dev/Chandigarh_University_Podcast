@@ -1,0 +1,36 @@
+nav ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+  padding: 0 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  ul li a.active {
+    border-bottom: 2px solid $accent-color;
+    color: $accent-color;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
