@@ -5,6 +5,16 @@ const rewindButton = document.getElementById("rewind");
 const skipButton = document.getElementById("skip");
 const currentTimeDisplay = document.getElementById("currentTime");
 const totalTimeDisplay = document.getElementById("totalTime");
+const nextTrack = document.getElementById("next");
+const prevTrack = document.getElementById("prev");
+
+const tracks = [
+  './assets/podcasts/Podcast_1.m4a',
+  './assets/podcasts/Podcast_2.m4a',
+  './assets/podcasts/track3.mp3'
+];
+let currentTrackIndex = 0;
+
 
 podcast.onloadedmetadata = function () {
   progress.max = podcast.duration; // Corrected from ondurationchange to duration
@@ -52,3 +62,18 @@ function formatTime(seconds) {
   const secs = Math.floor(seconds % 60);
   return `${minutes}:${secs < 10 ? "0" : ""}${secs}`;
 }
+
+function loadTrack(index) {
+  podcast.src = tracks[index];
+  podcast.play();
+}
+
+nextTrack.onclick = function () {
+  currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+  loadTrack(currentTrackIndex);
+};
+
+prevTrack.onclick = function () {
+  currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
+  loadTrack(currentTrackIndex);
+};
