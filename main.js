@@ -9,12 +9,16 @@ const nextTrack = document.getElementById("next");
 const prevTrack = document.getElementById("prev");
 
 const tracks = [
-  './assets/podcasts/Podcast_1.m4a',
-  './assets/podcasts/Podcast_2.m4a',
-  './assets/podcasts/track3.mp3'
+  "./assets/podcasts/Podcast_1.m4a",
+  "./assets/podcasts/Podcast_2.m4a",
+  "./assets/podcasts/Podcast_Federated_Learning.m4a",
+];
+const icards = [
+  "./assets/Thumbnails/Ep-01.jpeg",
+  "./assets/Thumbnails/Ep-02.jpeg",
+  "./assets/Thumbnails/Ep-03.jpeg",
 ];
 let currentTrackIndex = 0;
-
 
 podcast.onloadedmetadata = function () {
   progress.max = podcast.duration; // Corrected from ondurationchange to duration
@@ -65,6 +69,7 @@ function formatTime(seconds) {
 
 function loadTrack(index) {
   podcast.src = tracks[index];
+  document.getElementById("podcast-img").src = icards[index];
   podcast.play();
 }
 
