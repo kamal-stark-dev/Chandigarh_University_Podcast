@@ -82,3 +82,14 @@ prevTrack.onclick = function () {
   currentTrackIndex = (currentTrackIndex - 1 + tracks.length) % tracks.length;
   loadTrack(currentTrackIndex);
 };
+
+// Select all podcast cards
+const podcastCards = document.querySelectorAll(".podcast-card");
+
+// Add click event listener to each card
+podcastCards.forEach((card) => {
+  card.addEventListener("click", function () {
+    const index = this.getAttribute("data-index"); // Get the index from the data attribute
+    loadTrack(index); // Load and play the podcast track
+  });
+});

@@ -16,6 +16,11 @@ body {
   color: #333333;
 }
 
+main {
+  padding-top: 5rem;
+  padding: 0 2rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -52,6 +57,92 @@ html::-webkit-scrollbar {
   border-radius: 1rem;
 }
 
+@media (max-width: 425px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 6rem;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  header h2 {
+    margin-top: 0.6rem;
+    text-decoration: underline;
+  }
+  header nav {
+    margin-top: 1.2rem;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  header .socials {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    order: 2;
+  }
+  .hero .left {
+    width: 90vw;
+    text-align: center;
+  }
+  .hero .left h1 {
+    font-size: 2.4rem;
+  }
+  .hero .left a {
+    margin: 1rem auto;
+  }
+  .hero img {
+    width: 330px;
+    order: 1;
+  }
+  main {
+    padding: 0;
+  }
+  main .container h1 {
+    display: none;
+  }
+  main .container .category {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  main .container .category:nth-last-child(1) {
+    padding-bottom: 5rem;
+  }
+  main .container .category h2 {
+    font-size: 1.6rem;
+  }
+  main .container .category .pod-container .podcard {
+    min-width: 300px;
+  }
+  main .player {
+    padding: 0.8rem;
+  }
+  main .player #podcast-img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0px;
+    border-radius: 60px;
+  }
+  main {
+    padding-top: 5rem;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+  main .team .department h2 {
+    font-size: 1.4rem;
+  }
+  main .team .department .members {
+    display: flex;
+    flex-direction: column;
+  }
+  main .team .department .members .member {
+    margin: 0.8rem auto;
+    width: 90%;
+  }
+}
 nav ul {
   display: flex;
   gap: 1rem;
@@ -65,7 +156,6 @@ header {
   position: absolute;
   left: 0;
   right: 0;
-  height: 4.5rem;
   padding: 0 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -88,11 +178,6 @@ nav ul li a.active {
   font-size: 1.6rem;
 }
 
-main {
-  padding: 0 2rem;
-  padding-top: 5rem;
-}
-
 /* Podcast */
 .container h1 {
   text-align: center;
@@ -112,6 +197,7 @@ main {
   display: flex;
   gap: 1rem;
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 .pod-container .podcard {
   min-width: 340px;
@@ -123,6 +209,7 @@ main {
   justify-content: space-between;
   transition: all 0.4s ease-in-out;
   border-radius: 0.5rem;
+  scroll-snap-align: center;
 }
 .pod-container .podcard img {
   width: 100%;
@@ -137,4 +224,4 @@ main {
 }
 .pod-container .podcard:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, #4a8bdf 0px 0px 0px 2px;
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

@@ -21,6 +21,7 @@
   display: flex;
   gap: 1rem;
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 
   .podcard {
     min-width: 340px;
@@ -32,6 +33,7 @@
     justify-content: space-between;
     transition: all 0.4s ease-in-out;
     border-radius: 0.5rem;
+    scroll-snap-align: center;
 
     img {
       width: 100%;

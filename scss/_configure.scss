@@ -60,3 +60,122 @@ html::-webkit-scrollbar {
   background: $text-color;
   border-radius: 1rem;
 }
+
+@media (max-width: 425px) {
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    height: 6rem;
+    flex-direction: column;
+    padding: 1rem;
+
+    h2 {
+      margin-top: 0.6rem;
+      text-decoration: underline;
+    }
+
+    nav {
+      margin-top: 1.2rem;
+      width: max-content;
+    }
+
+    .socials {
+      display: none;
+    }
+  }
+
+  // index.html
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    order: 2;
+
+    .left {
+      width: 90vw;
+      text-align: center;
+
+      h1 {
+        font-size: 2.4rem;
+      }
+
+      a {
+        margin: 1rem auto;
+      }
+    }
+
+    img {
+      width: 330px;
+      order: 1;
+    }
+  }
+
+  // podcasts.html
+
+  main {
+    padding: 0;
+    .container {
+      h1 {
+        display: none;
+      }
+      .category {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+
+        &:nth-last-child(1) {
+          padding-bottom: 5rem;
+        }
+
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        .pod-container {
+          .podcard {
+            min-width: 300px;
+          }
+        }
+      }
+    }
+
+    .player {
+      padding: 0.8rem;
+
+      #podcast-img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0px;
+        border-radius: 60px;
+      }
+    }
+  }
+
+  // our-team.html
+
+  main {
+    padding-top: 5rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .team {
+      .department {
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        .members {
+          display: flex;
+          flex-direction: column;
+
+          .member {
+            margin: 0.8rem auto;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
