@@ -116,11 +116,11 @@ html::-webkit-scrollbar {
   main {
     padding: 0;
     .container {
+      padding-top: 2.82rem;
       h1 {
         display: none;
       }
       .category {
-        padding-top: 3rem;
         padding-bottom: 1rem;
 
         &:nth-last-child(1) {
@@ -133,7 +133,7 @@ html::-webkit-scrollbar {
 
         .pod-container {
           .podcard {
-            min-width: 300px;
+            min-width: 100%;
           }
         }
       }
@@ -158,6 +158,10 @@ html::-webkit-scrollbar {
 
     h1 {
       font-size: 2rem;
+    }
+
+    h2 {
+      padding: 0.4rem 2rem;
     }
 
     .team {

@@ -100,11 +100,13 @@ html::-webkit-scrollbar {
   main {
     padding: 0;
   }
+  main .container {
+    padding-top: 2.82rem;
+  }
   main .container h1 {
     display: none;
   }
   main .container .category {
-    padding-top: 3rem;
     padding-bottom: 1rem;
   }
   main .container .category:nth-last-child(1) {
@@ -114,7 +116,7 @@ html::-webkit-scrollbar {
     font-size: 1.6rem;
   }
   main .container .category .pod-container .podcard {
-    min-width: 300px;
+    min-width: 100%;
   }
   main .player {
     padding: 0.8rem;
@@ -130,6 +132,9 @@ html::-webkit-scrollbar {
   }
   main h1 {
     font-size: 2rem;
+  }
+  main h2 {
+    padding: 0.4rem 2rem;
   }
   main .team .department h2 {
     font-size: 1.4rem;
