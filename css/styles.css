@@ -159,6 +159,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: absolute;
+  background-color: #effafd;
   left: 0;
   right: 0;
   padding: 0.8rem 2rem;
@@ -229,4 +230,4 @@ nav ul li a.active {
 }
 .pod-container .podcard:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, #4a8bdf 0px 0px 0px 2px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
